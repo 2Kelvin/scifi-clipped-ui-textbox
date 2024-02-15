@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #e7d39f;
+}
+
+.container .textBox {
+    position: relative;
+    /* this one is new - used to contain absolute elements */
+    width: 300px;
+    height: 200px;
+    background-color: #522d5b;
+    overflow: hidden;
+}
+
+.container .textBox:after {
+    content: "";
+    position: absolute;
+    /* margin: -20px; */
+    margin-left: 270px;
+    margin-top: 170px;
+    width: 65px;
+    height: 65px;
+    transform: rotate(45deg);
+    background-color: #e7d39f;
+    /* background-color: #000; */
+    /* to see where it is */
+}
